@@ -48,3 +48,5 @@ for pi_model in pi_models:
 		
 if not model_found:
 	print "Your Raspberry Pi is revision " + revision + ", not really sure what that is. Most recent known version is Q1 2016."
+
+print "See https://en.wikipedia.org/wiki/Raspberry_Pi#Specifications for detailed specifications"
