@@ -42,7 +42,7 @@ revision = subprocess.check_output("cat /proc/cpuinfo | grep 'Revision' | awk '{
 model_found = False
 
 for pi_model in pi_models:
-	if (re.search(pi_model.regex, revision)):
+	if (re.search(str.encode(pi_model.regex), revision)):
 		model_found = True
 		print("You have a Raspberry Pi " + pi_model.model + ", released " + pi_model.release_date + " with " + pi_model.memory + " memory. Extra notes: " + pi_model.notes + ".")
 		
