@@ -35,7 +35,19 @@ pi_models = [
 	PiModel("900092", "Q4 2015", "Zero", "1.2", "512 MB", "Manufactured by Sony"),
 	PiModel("900093", "Q2 2016", "Zero", "1.3", "512 MB", ""),
 	PiModel("a02082", "Q1 2016", "3 Model B", "1.2", "1024 MB", "Manufactured by Sony"),
-	PiModel("a22082", "Q1 2016", "3 Model B", "1.2", "1024 MB", "Manufactured by ?"),
+	PiModel("a22082", "Q1 2016", "3 Model B", "1.2", "1024 MB", "Manufactured by Embest"),
+	PiModel("a32082", "Q4", "3 Model B", "1.2", "1 GB", "Manufactured by Sony Japan"),
+	PiModel("a020d3", "Q1", "3 Model B+", "1.3", "1 GB", "Manufactured by Sony"),
+	PiModel("9020e0", "Q4", "3 Model A+", "1.0", "512 MB", "Manufactured by Sony"),
+	PiModel("a02100", "Q1", "Compute Module 3+", "1.0", "1 GB", "Manufactured by Sony"),
+	PiModel("a03111", "Q2", "4 Model B", "1.1", "1 GB", "Manufactured by Sony"),
+	PiModel("b03111", "Q2", "4 Model B", "1.1", "2 GB", "Manufactured by Sony"),
+	PiModel("b03112", "Q2", "4 Model B", "1.2", "2 GB", "Manufactured by Sony"),
+	PiModel("b03114", "Q2", "4 Model B", "1.4", "2 GB", "Manufactured by Sony"),
+	PiModel("c03111", "Q2", "4 Model B", "1.1", "4 GB", "Manufactured by Sony"),
+	PiModel("c03112", "Q2", "4 Model B", "1.2", "4 GB", "Manufactured by Sony"),
+	PiModel("c03114", "Q2", "4 Model B", "1.4", "4 GB", "Manufactured by Sony"),
+	PiModel("d03114", "Q2", "4 Model B", "1.4", "8 GB", "Manufactured by Sony"),
 ]
 
 revision = subprocess.check_output("cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}' | sed 's/^1000//'", stdin=subprocess.PIPE, shell=True ).strip()
